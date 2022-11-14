@@ -45,7 +45,7 @@ const { createApp } = Vue
         currentImage: 0,
 
         nextImage: function(){
-            if(this.currentImage > this.slides.length -1){
+            if(this.currentImage >= this.slides.length -1){
                 this.currentImage = 0;
             }else{
                 this.currentImage++;
