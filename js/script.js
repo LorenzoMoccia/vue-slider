@@ -53,7 +53,11 @@ const { createApp } = Vue
         },
 
         prevImage: function(){
-            
+            if(this.currentImage <= 0){
+                this.currentImage = 4;
+            }else{
+                this.currentImage--;
+            }
         }
     }
   }).mount('#app')
