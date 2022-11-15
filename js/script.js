@@ -42,7 +42,7 @@ const { createApp } = Vue
     },
 
     methods:{
-        currentImage: 0,
+        
 
         nextImage: function(){
             if(this.currentImage >= this.slides.length -1){
